@@ -1,0 +1,161 @@
+/* reset */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: normal;
+    list-style: none;}
+
+/* body */
+body {
+    background-color: #3f1dff;
+    background-size: 10px 10px;
+    background-image: linear-gradient(45deg, #ffffff00 50%, rgba(251, 255, 0, 0.30) 99%);}
+
+/* float */
+.float{
+    position: fixed;
+    bottom: 10px;right: 10px;
+    width: 250px;height: 250px;
+    overflow: hidden;
+    z-index: 1000;}
+.cheer{
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    color: rgb(255, 30, 0);
+    transform: rotate(-45deg);
+    bottom: -10px;right: -15px;}
+.cheer::before{
+    position: absolute;
+    content: "";
+    width: 500px;height: 500px;
+    left: -100%;top: -3px;
+    background-color: Yellow;
+    z-index: -1;}
+.cheer:hover{color: rgb(255, 248, 214);}
+.cheer:hover::before{background-color: rgb(255, 51, 0);}
+
+/* header */
+header{
+    /* background-color: #fff; */
+    position: relative;
+    height: 15vw;}
+.title{
+    font-size: 5vw;
+    font-weight: bold;
+    text-align: center;
+    transform: rotate(-0.02turn) translate(-50%, -100%);
+    position: absolute;top: 72%;left: 50%;
+    text-shadow: 1px 1px 0 white, 4px 4px 0 red, 10px 10px 0 blue;}
+.title::before{
+    background-color: rgb(150, 230, 97);
+    height: 150%;width: 130%;
+    top: 10%;left: -10%;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transform: rotate(0.04turn);}
+.title::after{
+    background-color: rgb(252, 57, 22);
+    height: 100%;width: 100%;
+    top: 10%;left: 30%;
+    content: "";
+    position: absolute;
+    z-index: -2;
+    transform: rotate(0.01turn);}
+
+/* main */
+main{
+    width: 80%;height: 100vh;
+    margin: 0 auto;margin-top: 5%;
+    display: block;}
+.list{display: flex;justify-content: space-around;flex-wrap: wrap;}
+.list li{
+    /* background-color: red; */
+    position: relative;
+    width: 380px;height: 380px;
+    margin: 20px;
+    z-index: -2;}
+.list div{
+    position: absolute;
+    width: 300px;height: 300px;
+    /* background-color: rgba(255, 255, 0, 0.575); */
+    top: 50%;left: 50%;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 25px;padding-top: 40px;
+    font-size: 20px;font-weight: bold;
+    overflow: scroll;}
+.list div::-webkit-scrollbar{display: none;}
+.done::after{
+    content: "";
+    width: 90%;height: 72%;
+    top: 10%;left: 5%;
+    background-color: rgba(54, 8, 161, 0.726);
+    position: absolute;
+    clip-path: polygon(85% 0, 100% 18%, 36% 100%, 0 55%, 14% 37%, 36% 64%);}
+
+.list1 div{color: rgb(248, 42, 14);}
+.list1::before{
+    position: absolute;
+    content: "";
+    background-color: #fff;
+    width: 470px;height: 470px;
+    z-index: -1;
+    top: 50%;left: 50%;
+    transform: translate(-50%,-50%)rotate(50deg);
+    clip-path: polygon(50% 0, 35% 15%, 15% 15%, 15% 35%, 0 50%, 15% 65%, 15% 85%, 35% 85%, 50% 100%, 65% 85%, 85% 85%, 85% 65%, 100% 50%, 85% 35%, 85% 15%, 65% 15%);}
+
+.list2 div{color: rgb(236, 236, 210);}    
+.list2::before{
+    position: absolute;
+    background-color: rgb(247, 45, 45);
+    width: 400px;height: 380px;
+    content: "";
+    border-radius: 20%;
+    top: 50%;left: 50%;
+    transform: translate(-50%,-50%)rotate(-5deg);}
+
+.list3 div{color: rgb(255, 247, 252);}
+.list3::before{
+    position: absolute;
+    background-color: rgb(12, 196, 89);
+    width: 440px;height: 440px;
+    content: "";
+    border-radius: 50%;
+    top: 50%;left: 50%;
+    transform: translate(-50%,-50%);}
+
+.list4 div{color: rgb(119, 7, 172);}
+.list4::before{
+    position: absolute;
+    background-color: rgb(255, 252, 77);
+    width: 420px;height: 420px;
+    content: "";
+    top: 50%;left: 50%;
+    transform: translate(-50%,-50%) rotate(-5deg);
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);}
+
+.list5 div{color: rgb(45, 8, 253);}
+.list5::before{
+    position: absolute;
+    background-color: rgb(245, 178, 239);
+    width: 420px;height: 450px;
+    content: "";
+    top: 55%;left: 60%;
+    transform: translate(-50%,-50%)rotate(-80deg);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%);}
+
+.list6 div{color: rgb(255, 51, 0);}
+.list6::before{
+    position: absolute;
+    background-color: rgb(198, 255, 152);
+    width: 500px;height: 550px;
+    content: "";
+    top: 50%;left: 50%;
+    transform: translate(-50%,-50%)rotate(5deg);
+    clip-path: polygon(3% 60%, 6% 73%, 11% 83%, 18% 90%, 28% 94%, 37% 96%, 48% 98%, 57% 98%, 69% 96%, 79% 93%, 86% 88%, 92% 82%, 97% 72%, 99% 58%, 99% 48%, 98% 38%, 96% 27%, 91% 15%, 84% 5%, 77% 14%, 71% 25%, 66% 16%, 61% 8%, 55% 0, 48% 10%, 44% 18%, 41% 24%, 40% 29%, 38% 21%, 34% 13%, 28% 4%, 24% 14%, 20% 23%, 18% 30%, 10% 15%, 4% 29%, 2% 44%);}
